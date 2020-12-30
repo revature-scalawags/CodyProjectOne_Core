@@ -1,0 +1,46 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/vscode,metals,scala,sbt
+# Edit at https://www.toptal.com/developers/gitignore?templates=vscode,metals,scala,sbt
+
+### Metals ###
+.metals/
+.bloop/
+project/**/metals.sbt
+
+### SBT ###
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+.bsp
+
+### Scala ###
+*.class
+*.log
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# dotenv environment variables file
+.env
+
+#log file
+log.log
+
+#logback config file
+src/main/resources/logback.xml
+
+# End of https://www.toptal.com/developers/gitignore/api/vscode,metals,scala,sbt
