@@ -34,6 +34,8 @@ project/plugins/project/
 !.vscode/extensions.json
 *.code-workspace
 
+# End of https://www.toptal.com/developers/gitignore/api/vscode,metals,scala,sbt
+
 # dotenv environment variables file
 .env
 
@@ -43,4 +45,8 @@ log.log
 #logback config file
 src/main/resources/logback.xml
 
-# End of https://www.toptal.com/developers/gitignore/api/vscode,metals,scala,sbt
+#Generated text file
+results.txt
+
+#Scala format doc
+.scalafmt.conf
