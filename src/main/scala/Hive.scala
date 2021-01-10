@@ -13,9 +13,10 @@ object Hive extends LazyLogging {
     * - Reads from the text document and prints out the results to the user.
     * @param month Used to decide which Hive query to perform
     */
-  def query(month: String) {
+  def query(month: String): String = {
     if (month == "") {
       println("Invalid input!")
+      return "invalid"
     }
     else {
       val p = new PrintWriter("results.txt")
@@ -33,7 +34,8 @@ object Hive extends LazyLogging {
       println((" " * 42) + linkMonth + (" " * (44 - month.length)) + "COUNT")
       println("_" * 114)
       println("-" * 114)
-      for (line <- Source.fromFile("results.txt").getLines) {
+      val results = Source.fromFile("results.txt")
+      for (line <- results.getLines) {
         val newline = line.replaceAll("\t", " ").trim
 
         val category = newline.substring(0, newline.lastIndexOf(" "))
@@ -45,6 +47,8 @@ object Hive extends LazyLogging {
       }
       logger.debug("Data returned successfully!")
       println()
+      val resultsToReturn = Source.fromFile("results.txt").getLines().next()
+      resultsToReturn
     }
   }
 }
