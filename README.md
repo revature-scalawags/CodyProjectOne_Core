@@ -1,29 +1,29 @@
 # WIKIPEDIA CLICKSTREAM ANALYSIS
-# Project Description
+## Project Description
 Scala application that utilizes Hadoop and Hive to process Wikipedia data and find the most popular Wikipedia article links that were clicked on.
 
-# Technologies Used
+## Technologies Used
 - Scala
 - Hadoop (HDFS, YARN, MapReduce)
 - Hive
 
-# Features
+## Features
 
-## Current:
+### Current:
 - Ability to see top ten most popular links clicked for each month
 - User can specify a specific month or the entire year of 2020
 - Optional flags allow user to target different parameters (see "Usage" for more detail)
 
-## To-Do:
+### To-Do:
 - Add support for previous years
 - Add support for additional optional flags
 
-# Requirements
+## Requirements
 - [JDK version 8 or 11](https://adoptopenjdk.net/)
 - [Scala and SBT](https://www.scala-lang.org/download/2.12.8.html)
 - [Hortonworks HDP Sandbox](https://www.cloudera.com/downloads/hortonworks-sandbox/hdp.html) preconfigured with Hive tables of Wiki data and Hive Query command files.
 
-# Usage
+## Usage
 1. Ensure above requirements are met
 2. Navigate to your desired work folder and run the shell command:
 ```bash
