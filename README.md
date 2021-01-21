@@ -3,9 +3,9 @@
 Scala application that utilizes Hadoop and Hive to process Wikipedia data and find the most popular Wikipedia article links that were clicked on.
 
 ## Technologies Used
-- Scala
-- Hadoop (HDFS, YARN, MapReduce)
-- Hive
+- Scala - version 2.13.4
+- Hadoop (HDFS, YARN, MapReduce) - version 3.1.1
+- Hive - version 3.1.0 
 
 ## Features
 
